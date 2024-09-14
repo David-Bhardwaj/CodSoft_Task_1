@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Cal.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="calculator">
+
+            <div class="screen">
+                <div class="screen-last" id="lastScreen"></div>
+                <div class="screen-current" id="currentScreen">0</div>
+            </div>
+
+            <div class="But-sec">
+                <button class="btn btn-red span-2" id="clearBtn" onclick="this.blur();">
+                    CLEAR
+                </button>
+                <button class="btn btn-blue span-2" id="deleteBtn" onclick="this.blur();">
+                    DELETE
+                </button>
+                <button class="btn num" onclick="this.blur();" Number>7</button>
+                <button class="btn num" onclick="this.blur();" Number>8</button>
+                <button class="btn num" onclick="this.blur();" Number>9</button>
+                <button class="btn symbol" onclick="this.blur();" Operators>÷</button>
+
+                <button class="btn num" onclick="this.blur();" Number>4</button>
+                <button class="btn num" onclick="this.blur();" Number>5</button>
+                <button class="btn num" onclick="this.blur();" Number>6</button>
+                <button class="btn symbol" onclick="this.blur();" Operators>×</button>
+
+                <button class="btn num" onclick="this.blur();" Number>1</button>
+                <button class="btn num" onclick="this.blur();" Number>2</button>
+                <button class="btn num" onclick="this.blur();" Number>3</button>
+                <button class="btn symbol" onclick="this.blur();" Operators>-</button>
+
+                <button class="btn btn-red" onclick="this.blur();" id="pointBtn">.</button>
+                <button class="btn num" onclick="this.blur();" Number>0</button>
+                <button class="btn btn-blue" onclick="this.blur();" id="equalsBtn">=</button>
+                <button class="btn symbol" onclick="this.blur();" Operators>+</button>
+            </div>
+        </div>
+    </main>
+    <script src="Cal.js"></script>
+</body>
+
+</html>
